@@ -1,0 +1,14 @@
+syntax = "proto3";
+package snip;
+
+service UrlSnipService {
+    rpc snip_it(SnipRequest) returns (SnipResponse) {}
+}
+
+message SnipRequest {
+    string url = 1;
+}
+
+message SnipResponse {
+    string url = 1;
+}
