@@ -3,12 +3,13 @@
 
 require 'grpc'
 require 'snip_pb'
+require 'grpc-commons/generic_service'
 
 module Snip
   module UrlSnipService
     class Service
 
-      include GRPC::GenericService
+      include GrpcCommons::GenericService
 
       self.marshal_class_method = :encode
       self.unmarshal_class_method = :decode
