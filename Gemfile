@@ -2,4 +2,4 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'snip',:git => "https://github.com/shiladitya-bits/grpc-commons",:branch => 'master'
+gem 'grpc-commons',:git => "https://github.com/shiladitya-bits/grpc-commons",:branch => 'master'
